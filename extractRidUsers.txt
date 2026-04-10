@@ -1,0 +1,3 @@
+function extractRidUsers() {
+    grep -oP '\\\K[^ ]+\.[^ ]+(?= \(SidTypeUser\))' > rid_users.txt
+}
